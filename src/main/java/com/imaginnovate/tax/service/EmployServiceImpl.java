@@ -21,6 +21,9 @@ public class EmployServiceImpl implements EmployService{
     @Autowired
     EmployMapper employMapper;
 
+    public EmployServiceImpl() {
+    }
+
     @Override
     public EmployDTO saveEmploy(EmployDTO employDTO) {
         var existsEmployId = employRepository.findById(employDTO.getId()).orElse(null);
