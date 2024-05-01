@@ -1,0 +1,18 @@
+server:
+  port: 8085
+
+spring:
+  application:
+    name: EMPLOY-TAX-SERVICE
+
+  datasource:
+    url: jdbc:sqlserver://;serverName=localhost;databaseName=UserDB;encrypt=true;trustServerCertificate=true
+    username: developer
+    password: Nikki@0712
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  jpa:
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.SQLServer2016Dialect
+    show-sql: true
+
